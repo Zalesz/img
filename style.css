@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+nav {
+    grid-column: 2/span 2;
+    background-image: url(dand2.jpg);
+}
+
+
+header {
+    background-image: url(dandelion.jpg);
+}
+aside {
+    background-image: url(dand3.jpg);
+}
+footer {
+    background-image: url(dandy2.gif);
+}
+article {
+    background-image: url(dandy.gif);
+}
+main>* {
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: right;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 0.6;
+}
+main>nav {
+    text-align: left;
+}
+nav>div>a {
+    text-decoration:none;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+#menu {
+    background-color:rgba(127, 6, 241, 0.3);
+    padding: 10px;
+}
+main>*:hover {
+    opacity: 1;
+}
